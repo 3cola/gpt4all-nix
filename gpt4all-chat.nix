@@ -6,6 +6,7 @@
 , qmake
 , qtquicktimeline
 , qtsvg
+, qthttpserver
 , wrapQtAppsHook
 }:
 
@@ -28,6 +29,7 @@ stdenv.mkDerivation {
   buildInputs = [
     qtquicktimeline
     qtsvg
+    qthttpserver
   ];
 
   setSourceRoot = "sourceRoot=`pwd`/source/gpt4all-chat";
