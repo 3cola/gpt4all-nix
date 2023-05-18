@@ -3,11 +3,11 @@
     "gpt4all": {
       "flake": false,
       "locked": {
-        "lastModified": 1684331780,
-        "narHash": "sha256-5Bkx8KYvR5SXcGg5YBTJgFRatD2jYDi1XGj7uwEHJcQ=",
+        "lastModified": 1684429905,
+        "narHash": "sha256-pUQv89iiur7RFRKzl1evAw2zosVcHwEhgb0qzBUPlVw=",
         "ref": "refs/heads/main",
-        "rev": "bce2b3025b360af73091da0128b1e91f9bc94f9f",
-        "revCount": 749,
+        "rev": "d1e65e8d1c3595e6d2b58a0a4449851c47a2294f",
+        "revCount": 754,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/nomic-ai/gpt4all"
