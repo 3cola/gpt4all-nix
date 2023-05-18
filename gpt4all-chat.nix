@@ -6,6 +6,7 @@
 , qmake
 , qtquicktimeline
 , qtsvg
+, qthttpserver
 , wrapQtAppsHook
 , withAvx2 ? true
 }:
@@ -29,6 +30,7 @@ stdenv.mkDerivation {
   buildInputs = [
     qtquicktimeline
     qtsvg
+    qthttpserver
   ];
 
   cmakeFlags = if withAvx2 then [] else [ "-DGPT4ALL_AVX_ONLY=ON" ];
