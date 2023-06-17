@@ -1,12 +1,14 @@
 { src 
 , lib
 , stdenv
-, fetchFromGitHub
 , cmake
 , qmake
+, qtwayland
 , qtquicktimeline
 , qtsvg
 , qthttpserver
+, qtwebengine
+, qt5compat
 , wrapQtAppsHook
 , withAvx2 ? true
 }:
@@ -28,9 +30,12 @@ stdenv.mkDerivation {
   ];
 
   buildInputs = [
+    qtwayland
     qtquicktimeline
     qtsvg
     qthttpserver
+    qtwebengine
+    qt5compat
   ];
 
   cmakeFlags = if withAvx2 then [] else [ "-DGPT4ALL_AVX_ONLY=ON" ];
